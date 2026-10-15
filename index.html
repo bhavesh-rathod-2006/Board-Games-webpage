@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+     
+        
+
+        .navbar{
+            width: 100vw;
+            height: 70px;
+            /* border: 2px solid black; */
+            margin-top: 5px;
+            margin-left: 4px;
+            display: flex;
+            gap: 180px;
+            align-items: center;
+             box-shadow: 0px 0px 10px black;
+          
+        }
+        .logo{
+            /* border: 2px solid black; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bolder;
+            font-size: xx-large;
+            margin-left: 25px;
+            padding: 0px 10px 0px 10px;
+           
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px black;
+            transition:0.3s;
+        }
+        .logo:hover{
+                /* text-shadow: 2px 3px 4px blue; */
+                 box-shadow: 0px 0px 30px black;
+                 transform: scale(1.01);
+        }
+        .center > ul{
+            display: flex;
+          gap: 70px;
+          height: inherit;
+          /* border: 2px solid black; */
+          align-items: center;
+          justify-content: center;
+          list-style: none;
+          font-weight: bolder;
+          padding-left: 30px;
+          padding-right: 30px;
+          font-size: large;
+          
+        }
+
+        ul > li{
+            height: inherit;
+
+        }
+        .center > ul > li:hover{
+            color: red;
+            background-color:aliceblue;
+            
+        }
+        .right{
+            display: flex;
+            gap:  40px;
+        }
+        .btn1 , .btn2 {
+            background-color: yellow;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            padding-left: 25px;
+            padding-right: 25px;
+            border-radius: 20px;
+            font-weight: bolder;
+            font-size: medium;
+            box-shadow: 0px 0px 10px black;
+        }
+
+        .btn1:hover , .btn2:hover {
+            background-color: red;
+            color:white;
+
+        }
+
+        .btn1:active , .btn2:active{
+            background-color: green;
+        }
+        .dragOption{
+            position: relative;
+        }
+        .dragContent{
+            position: absolute;
+            top: 20px;
+            left: 1px ;
+            background-color: white;
+            padding: 5px 10px 10px 5px;
+            box-shadow: 0px 0px 5px ;
+            border-radius: 10px;
+            display: none;
+            
+            
+        }
+      
+
+        .dragOption:hover > .dragContent{
+           display: block;
+        }
+
+        .dragContnet > ul {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+              
+        } 
+
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">BR-Games</div>
+        <div class="center">
+            <ul>
+                <li>Home</li>
+                <li class="dragOption">Games
+                    <div class="dragContent">
+                        <ul style="list-style: none;">
+                            <li><a href="Ludo.html">Ludo</a></li>
+                            <li><a href="Chess.html">Chess</a></li>
+                            <li><a href="Table.html">Table</a></li>
+                            <li><a href="sukodu.html">Sukodu</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>Help</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn1">Login</button>
+            <button class="btn2">SignUp</button>
+        </div>
+    </div>
+</body>
+</html>
